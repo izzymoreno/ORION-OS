@@ -4,6 +4,17 @@ asm
  mov ax,0B800h
  mov es,ax
  mov di,0
+ mov al,0
+ mov ah,0
+ mov cx,2000
+@0:mov es:[di],ax
+ add di,2
+ loop @0
+ mov ah,10h
+ int 16h
+ mov ax,0B800h
+ mov es,ax
+ mov di,0
 { mov al,0
  mov ah,0
  mov cx,2000
