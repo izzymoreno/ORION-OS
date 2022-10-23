@@ -1,4 +1,4 @@
-Program TEST_MODULE;
+Program TEST;
 asm
 mov ax,0003h
 int 10h
