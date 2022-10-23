@@ -1,4 +1,4 @@
-Program LOADER;
+Program TEST_MODULE;
 asm
 mov ax,0003h
 int 10h
